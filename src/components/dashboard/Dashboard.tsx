@@ -14,7 +14,7 @@ const Dashboard = () => {
       refreshingText="Refreshing..."
       completeText="Refresh complete"
     >
-      <ImageList sx={{ width: 500}}>
+      <ImageList>
         <ImageListItem key="Subheader" cols={2}>
           <ListSubheader component="div">December</ListSubheader>
         </ImageListItem>
