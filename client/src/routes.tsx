@@ -7,8 +7,9 @@ const routes = [
   {
     path: '/',
     element: <UserLayout>
-               <Dashboard /> 
-             </UserLayout>, // Wrap Dashboard in UserLayout
+      <Dashboard />
+    </UserLayout>,
+    children: [{ path: '/', element: <Dashboard /> }],
   },
   {
     path: '/admin',
