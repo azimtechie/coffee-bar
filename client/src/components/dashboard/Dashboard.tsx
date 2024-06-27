@@ -1,4 +1,4 @@
-import { PullToRefresh, Skeleton } from 'antd-mobile';
+import { PullToRefresh } from 'antd-mobile';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';

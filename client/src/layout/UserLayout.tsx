@@ -21,16 +21,16 @@ interface Props {
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
+  // backgroundColor: alpha(theme.palette.common.white, 0.15),
   '&:hover': {
     backgroundColor: alpha(theme.palette.common.white, 0.25),
   },
-  marginLeft: 0,
-  width: '150px',
-  [theme.breakpoints.up('sm')]: {
+  // marginLeft: 0,
+  // width: '150px',
+  // [theme.breakpoints.up('sm')]: {
     marginLeft: theme.spacing(1),
     width: 'auto',
-  },
+  // },
 }));
 
 const SearchIconWrapper = styled('div')(({ theme }) => ({
@@ -50,12 +50,10 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     padding: theme.spacing(1, 1, 1, 0),
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create('width'),
-    [theme.breakpoints.up('sm')]: {
-      width: '12ch',
+      width: '0px',
       '&:focus': {
-        width: '20ch',
+        width: '10ch',
       },
-    },
   },
 }));
 
@@ -113,7 +111,7 @@ const UserLayout = (props: Props) => {
             component="div"
             sx={{ flexGrow: 1, display: {  sm: 'block' } }}
           >
-            MUI
+            Dashboard
           </Typography>
           <Search>
             <SearchIconWrapper>
@@ -129,7 +127,7 @@ const UserLayout = (props: Props) => {
     </Box>
       <Toolbar id="back-to-top-anchor" />
       <Container>
-        {/* <Outlet /> */}
+        <Outlet />
       </Container>
       <ScrollTop {...props}>
         <Fab size="small" aria-label="scroll back to top">

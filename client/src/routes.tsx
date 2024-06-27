@@ -6,8 +6,9 @@ import UserLayout from './layout/UserLayout';
 const routes = [
   {
     path: '/',
-    element: <UserLayout />,
-    children: [{ path: '/', element: <Dashboard /> }],
+    element: <UserLayout>
+               <Dashboard /> 
+             </UserLayout>, // Wrap Dashboard in UserLayout
   },
   {
     path: '/admin',
