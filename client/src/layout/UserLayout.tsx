@@ -111,7 +111,7 @@ const UserLayout = (props: Props) => {
             component="div"
             sx={{ flexGrow: 1, display: {  sm: 'block' } }}
           >
-            Dashboard
+            Menu
           </Typography>
           <Search>
             <SearchIconWrapper>
@@ -125,7 +125,7 @@ const UserLayout = (props: Props) => {
         </Toolbar>
       </AppBar>
     </Box>
-      <Toolbar id="back-to-top-anchor" />
+      <Toolbar className='min-h-6' id="back-to-top-anchor" />
       <Container>
         <Outlet />
       </Container>

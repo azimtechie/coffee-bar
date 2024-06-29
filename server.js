@@ -8,15 +8,15 @@ const path = require("path");
 dotenv.config();
 const database = process.env.DATABASE;
 const app = express();
-// const main = async () => {
-//   try {
-//     await mongoose.connect(database);
-//     console.log("Connected to MongoDB");
-//   } catch (error) {
-//     console.error("Error connecting to MongoDB:", error);
-//   }
-// };
-// main().catch();
+const main = async () => {
+  try {
+    await mongoose.connect(database);
+    console.log("Connected to MongoDB");
+  } catch (error) {
+    console.error("Error connecting to MongoDB:", error);
+  }
+};
+main().catch();
 
 app.use(cors({ origin: "*" }));
 app.use(express.json());

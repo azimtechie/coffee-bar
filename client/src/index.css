@@ -1,3 +1,41 @@
 @tailwind base;
+
+* {
+    scrollbar-width: thin;
+}
+
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .text-input {
+        @apply rounded-md !important;
+    }
+
+    .theme-btn {
+        @apply h-12 font-medium rounded-md !important;
+    }
+
+    .form-select {
+        @apply w-full rounded-md !important;
+    }
+}
+
+:root {
+    --primary-theme-color: #FF9358;
+    --primary-font-color: #282C15;
+    --secondary-font-color: #54606E;
+    --border-color: #CBD5E1;
+    --place-holder-color: #BBBFC5;
+    --disable-color: #D7D9E4;
+    --danger-color: #CD0000;
+}
+
+body {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    color: var(--primary-font-color);
+}
+.rounded-md .MuiImageListItemBar-titleWrap{
+    padding: 12px !important;
+}
