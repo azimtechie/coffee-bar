@@ -29,6 +29,14 @@
     --place-holder-color: #BBBFC5;
     --disable-color: #D7D9E4;
     --danger-color: #CD0000;
+    touch-action: pan-x pan-y;
+}
+
+html,
+body {
+    overscroll-behavior: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 body {
@@ -36,6 +44,7 @@ body {
     font-weight: 400;
     color: var(--primary-font-color);
 }
-.rounded-md .MuiImageListItemBar-titleWrap{
+
+.rounded-md .MuiImageListItemBar-titleWrap {
     padding: 12px !important;
 }
